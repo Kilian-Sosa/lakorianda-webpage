@@ -51,23 +51,3 @@ body {
   right: 35px;
   }
 }
-
-@media only screen and (max-width: 740px) {
-  #menu_mobile{
-    display: flex !important;
-  }
-  
-  #menu_pc{
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 740px) {
-  #menu_mobile{
-    display: none !important;
-  }
-
-  #menu_pc {
-    display: flex !important;
-  }
-}

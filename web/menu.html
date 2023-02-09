@@ -11,6 +11,22 @@
   </head>
   <body>
     <!-- Menú Principal -->
+    <nav class="navbar navbar-expand bg-light" id="menu_mobile">
+      <div class="container-fluid d-flex justify-content-end">
+        <a class="navbar-brand fs-1 font-monospace m-0 text-center col-12 menu_content">LA KORIANDA</a>
+        <span class="position-absolute menu_content" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a style="color: #f1f1f1;" href="#">LA KORIANDA</a>
+            <a href="#">SOBRE NOSOTROS</a>
+            <a href="#">MENÚS</a>
+            <a href="#">RESERVAS</a>
+            <a href="#">CONTACTO</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <nav class="navbar navbar-expand bg-light" id="menu_pc">
       <div class="container-fluid">
           <ul class="navbar-nav">

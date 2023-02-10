@@ -1,0 +1,13 @@
+a {
+    color: #322203;
+    text-decoration: none;
+    transition: all .2s ease-in;
+}
+
+.footer-element {
+  transition: all .2s ease-in;
+}
+
+.footer-element:hover {
+  color: #FFFFF0 !important;
+}

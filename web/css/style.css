@@ -1,0 +1,85 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css";
+@import "bootstrap.css";
+@import "menu.css";
+@import "footer.css";
+
+@font-face {
+  font-family: Hatton;
+  src: url(../fonts/pp_hatton_medium.otf);
+}
+
+@font-face {
+  font-family: Hatton Light;
+  src: url(../fonts/pp_hatton_ultralight.otf);
+}
+
+@media print {
+  .menu,
+  .footer {
+    display: none;
+  }
+}
+
+a:hover {
+  color: #80ab9f !important;
+}
+
+.font-primary {
+  font-family: Hatton;
+}
+
+.font-secondary {
+  font-family: Hatton Light;
+}
+
+.text-primary {
+  color: #80ab9f !important;
+}
+
+.btn-outline-primary {
+  color: black;
+  border: none;
+  outline: 2px solid #80ab9f;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: white;
+  background-color: #80ab9f !important;
+}
+
+.btn-outline-primary:focus,
+.btn-close:focus,
+.form-control:focus,
+.form-check-input:focus {
+  border: none;
+  outline: 2px solid #80ab9f;
+  box-shadow: 0 0 0 5px rgba(128, 171, 159, 0.5);
+}
+
+.form-check-input:checked {
+  border-color: #80ab9f;
+  background-color: #80ab9f;
+}
+
+::-moz-selection {
+  color: white;
+  background: #80ab9f;
+}
+
+::selection {
+  color: white;
+  background: #80ab9f;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #80ab9f;
+}

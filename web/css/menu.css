@@ -2,6 +2,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+nav{
+  background-color: #FFFFF0;
+}
+
 .overlay {
   height: 0%;
   width: 100%;
@@ -46,13 +50,13 @@ body {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 768px) {
   #menu_mobile{
     display: flex !important;
   }
@@ -62,7 +66,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 768px) {
   #menu_mobile{
     display: none !important;
   }

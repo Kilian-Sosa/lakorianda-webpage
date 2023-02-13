@@ -1,9 +1,5 @@
-body {
-  font-family: 'Lato', sans-serif;
-}
-
-nav{
-  background-color: #FFFFF0;
+nav {
+  background-color: #fffff0;
 }
 
 .overlay {
@@ -13,7 +9,7 @@ nav{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #80AB9FF0;
+  background-color: #80ab9ff0;
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -35,20 +31,25 @@ nav{
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1 !important;
 }
 
 .overlay .closebtn {
   position: absolute;
-  top: -10px;
+  top: -20px;
   right: 5px;
   font-size: 60px;
 }
 
 @media only screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -56,22 +57,48 @@ nav{
   }
 }
 
-@media only screen and (max-width: 768px) {
-  #menu_mobile{
-    display: flex !important;
+@media only screen and (max-width: 960px) {
+  .menu_mobile {
+    display: block;
+    animation: aparecer-derecha 0.5s;
   }
-  
-  #menu_pc{
-    display: none !important;
+
+  .menu_pc {
+    display: none;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  #menu_mobile{
-    display: none !important;
+@media only screen and (min-width: 960px) {
+  .menu_pc {
+    display: block;
+    animation: aparecer-izquierda 0.5s;
   }
 
-  #menu_pc {
-    display: flex !important;
+  .menu_mobile {
+    display: none;
+  }
+}
+
+@keyframes aparecer-derecha {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes aparecer-izquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

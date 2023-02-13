@@ -17,7 +17,7 @@
 div.polaroid {
   width: 100%;
   max-width: 300px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   border-radius: 5px;
@@ -25,12 +25,12 @@ div.polaroid {
 
 div.description {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 5px;
 }
 
 div.polaroid {
-  flex-basis: 33.333333%;
+  flex-basis: 33%;
   list-style: none;
   padding: 0px 10px;
   margin: 0px 10px;
@@ -41,7 +41,8 @@ div.polaroid img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-  border-radius: 5px 5px 0px 0px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 .polaroid {

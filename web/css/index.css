@@ -47,10 +47,10 @@ div.polaroid img {
 .polaroid {
   transition: transform 0.5s;
 }
+
 .polaroid:hover {
   transform: scale(1.04);
 }
-
 
 @media only screen and (min-width: 992px) {
   #headImg {

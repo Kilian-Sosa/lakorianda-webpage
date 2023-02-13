@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - La Korianda</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body class="bg-primary">
+    <!-- Principal Menu -->
+    <nav class="navbar navbar-expand menu_mobile">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand nav-link fs-1 font-primary m-0 menu_content"
+          href="#"
+        >
+          LA KORIANDA
+        </a>
+        <p class="pe-2 c-pointer fs-1 h-color menu_content" onclick="openNav()">
+          &#9776;
+        </p>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            &times;
+          </a>
+          <div class="overlay-content">
+            <a href="#" class="text-primary">LA KORIANDA</a>
+            <a href="#about_us">NOSOTROS</a>
+            <a href="#">MENÚS</a>
+            <a href="#">RESERVAS</a>
+            <a href="#">CONTACTO</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand text-center menu_pc">
+      <div class="container-fluid fw-bold">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#about_us">NOSOTROS</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#">MENÚS</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item m-0">
+            <a
+              class="navbar-brand nav-link fs-1 font-primary m-0 t-scale"
+              href="#"
+            >
+              LA KORIANDA
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#">RESERVAS</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="#">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Welcome -->
+    <div
+      class="d-flex justify-content-center align-items-center position-relative"
+    >
+      <img src="images/index/header.jpeg" alt="..." id="headImg" />
+      <div
+        id="textHeader"
+        class="d-grid align-content-center text-center text-white font-secondary position-absolute rounded-circle"
+      >
+        <p class="fs-1">¡Bienvenido/a!</p>
+        <p class="fs-2">Toda una carta apta para celiacos</p>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="container-fluid my-5 p-5" id="about_us">
+      <div class="row">
+        <div class="mb-sm-5 col-sm-12 col-lg-6 d-flex align-items-center justify-content-center mb-auto mb-sm-0">
+          <img src="images/index/about_us.png" alt="..." width="95%" style="max-width: 500px";/>
+        </div>
+        <div class="mt-sm-5 col-sm-12 col-lg-6 d-flex align-items-center justify-content-center pe-lg-5">
+          <div>
+            <h2 class="font-primary">LA KORIANDA</h2>
+            <p class="fs-7 mt-4">
+              Un restaurante gluten-free asequible ofrece opciones de comida sin gluten para personas 
+              con intolerancias o preferencias dietéticas específicas. Ofrece platos típicos, desde ensaladas
+              hasta postres, sin gluten y con un personal amable y conciente. Con un ambiente acogedor y 
+              una amplia variedad de opciones, es perfecto para aquellos que buscan una experiencia culinaria 
+              sin preocupaciones. En resumen, es una opción ideal para disfrutar de una comida deliciosa y segura 
+              sin sacrificar el presupuesto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-3 col-sm-12 col-lg-10 mx-auto"/>
+    
+    <!-- Gallery -->
+    <div class="container-fluid py-5 my-5">
+      <div>
+        <div class="row px-5">
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/galeria1.jpeg" alt="image1" />
+              <div class="description">
+                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/galeria2.jpeg" alt="image2" />
+              <div class="description">
+                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/galeria3.jpeg" alt="image3" />
+              <div class="description">
+                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/galeria4.jpeg" alt="image4" />
+              <div class="description">
+                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/galeria5.jpeg" alt="image4" />
+              <div class="description">
+                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/galeria6.jpeg" alt="image6" />
+              <div class="description">
+                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <div style="background-color: #80ab9f; color: #322203">
+      <div class="col-12 pt-5">
+        <div class="d-flex justify-content-center">
+          <h3 class="font-primary footer-element">LA KORIANDA</h3>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <hr class="line col-4" />
+      </div>
+      <div class="row m-0 p-0 text-center">
+        <div class="links col-sm-12 order-sm-2 col-lg-3 order-lg-0">
+          <a class="footer-element" href="">Política de Cookies</a>
+          <br />
+          <a class="footer-element" href="">Política de Privacidad</a>
+        </div>
+        <div class="rights col-sm-12 col-lg-6 order-sm-0 order-lg-1">
+          <p class="mt-3 font-primary footer-element fs-5">
+            © 2023 LA KORIANDA - ALL RIGHTS RESERVED
+          </p>
+        </div>
+        <div class="links col-sm-12 order-sm-1 col-lg-3 order-lg-2">
+          <a class="footer-element" href="">Reservas</a>
+          <br />
+          <a class="footer-element" href="">Contacto</a>
+        </div>
+      </div>
+      <div class="col-12 pb-4 mt-sm-2 mt-sm-4 mt-lg-2">
+        <div class="d-flex justify-content-center">
+          <i class="fa-brands footer-element fa-facebook mx-4 fs-1"></i>
+          <i class="fa-brands footer-element fa-instagram mx-4 fs-1"></i>
+          <i class="fa-brands footer-element fa-whatsapp mx-4 fs-1"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

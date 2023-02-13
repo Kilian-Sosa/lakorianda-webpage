@@ -1,25 +1,17 @@
 a {
-    color: #322203;
-    text-decoration: none;
-    transition: all .2s ease-in;
+  color: #322203;
 }
 
 .footer-element {
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .footer-element:hover {
-  color: #FFFFF0 !important;
+  color: #fffff0 !important;
 }
 
-
-@media only screen and (max-width: 992px) {
-    #rightsText_mobile{display: block !important;}
-    #rightsText_pc{display: none !important;}
-}
-
-
-@media only screen and (min-width: 992px) {
-    #rightsText_mobile{display: none !important;}
-    #rightsText_pc{display: block !important;}
+@media only screen and (max-width: 576px) {
+  .links {
+    display: none;
+  }
 }

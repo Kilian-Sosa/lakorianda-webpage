@@ -1,8 +1,51 @@
 .seleccionado {
   padding-bottom: 9px !important;
-  border-bottom: solid 3px #000 !important;
+  border-bottom: solid 3px #322203 !important;
+  animation: aparecer 0.5s ease-in-out;
 }
 
 .tabcontent {
   display: none;
+}
+
+#showDesayunos {
+  animation: aparecer-izquierda 0.3s ease-in-out;
+}
+
+#showAlmuerzos {
+  animation: aparecer-derecha 0.3s ease-in-out;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer-derecha {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes aparecer-izquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

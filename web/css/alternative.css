@@ -1,0 +1,51 @@
+@media print {
+  .menu,
+  .footer {
+    display: none;
+  }
+}
+
+@media speech {
+  .menu,
+  .footer {
+    display: none;
+  }
+}
+
+* {
+  font-family: Consolas !important;
+  color: #000000 !important;
+}
+
+a:hover,
+.h-color:hover,
+.footer-element:hover {
+  color: #000000 !important;
+}
+
+.font-primary {
+  font-family: Consolas !important;
+}
+
+.font-secondary {
+  font-family: Consolas !important;
+}
+
+i {
+  font-family: "Font Awesome 6 Brands" !important;
+}
+
+.polaroid:hover,
+.t-scale:hover {
+  transform: none;
+}
+
+::-moz-selection {
+  color: #000000;
+  background: #80ab9f;
+}
+
+::selection {
+  color: #000000;
+  background: #80ab9f;
+}

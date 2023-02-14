@@ -14,10 +14,31 @@
   background-color: #90bbae7e;
 }
 
+#btnUp {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  outline: none;
+  color: #322203;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0);
+}
+
+#btnUp.show {
+  display: block;
+  transform: scale(1);
+}
+
+
 div.polaroid {
   width: 100%;
   max-width: 300px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   border-radius: 5px;
@@ -25,12 +46,12 @@ div.polaroid {
 
 div.description {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 5px;
 }
 
 div.polaroid {
-  flex-basis: 33.333333%;
+  flex-basis: 33%;
   list-style: none;
   padding: 0px 10px;
   margin: 0px 10px;
@@ -41,7 +62,8 @@ div.polaroid img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-  border-radius: 5px 5px 0px 0px;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 .polaroid {
@@ -51,15 +73,22 @@ div.polaroid img {
   transform: scale(1.04);
 }
 
-
 @media only screen and (min-width: 992px) {
   #headImg {
     height: calc(100vh - 86.5px) !important;
+  }
+
+  #btnUp {
+    right: 30px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   #headImg {
     height: calc(100vh - 75px);
+  }
+
+  #btnUp {
+    right: 10px;
   }
 }

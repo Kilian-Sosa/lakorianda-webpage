@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> - La Korianda</title>
+    <title>Menús - La Korianda</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="images/lakorianda.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="alternate stylesheet"
+      title="Alternative"
+      href="css/alternative.css"
+    />
   </head>
-  <body>
+  <body class="bg-primary">
     <!-- Principal Menu -->
     <nav class="navbar navbar-expand menu_mobile">
       <div class="container-fluid">
         <a
-          class="navbar-brand nav-link fs-1 font-primary m-0 menu_content t-scaleX"
-          href="./index.html"
+          class="navbar-brand nav-link fs-1 font-primary m-0 menu_content"
+          href="#"
         >
           LA KORIANDA
         </a>
@@ -26,9 +31,9 @@
             &times;
           </a>
           <div class="overlay-content">
-            <a href="index.html" class="text-primary">LA KORIANDA</a>
-            <a href="#about_us">NOSOTROS</a>
-            <a href="menus.html">MENÚS</a>
+            <a href="./index.html">LA KORIANDA</a>
+            <a href="./index.html#about_us">NOSOTROS</a>
+            <a href="./menus.html" class="text-primary">MENÚS</a>
             <a href="#">RESERVAS</a>
             <a href="#">CONTACTO</a>
           </div>
@@ -40,7 +45,7 @@
       <div class="container-fluid fw-bold">
         <ul class="navbar-nav">
           <li class="nav-item mx-4">
-            <a class="nav-link" href="index.html#about_us">NOSOTROS</a>
+            <a class="nav-link" href="./index.html#about_us">NOSOTROS</a>
           </li>
           <li class="nav-item mx-4">
             <a class="nav-link" href="./menus.html">MENÚS</a>
@@ -67,8 +72,6 @@
       </div>
     </nav>
 
-    <!-- Content Here -->
-    
     <!-- Footer -->
     <div class="bg-secondary text-primary">
       <div class="col-12 pt-5">
@@ -104,7 +107,7 @@
         </div>
       </div>
     </div>
-    
+
     <script src="js/bootstrap.js"></script>
     <script src="js/menu.js"></script>
   </body>

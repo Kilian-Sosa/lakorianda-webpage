@@ -20,6 +20,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 a {
   text-decoration: none;
   transition: all 0.2s ease-in !important;
@@ -33,12 +37,20 @@ a:hover {
   background-color: #fffff0 !important;
 }
 
+.bg-secondary {
+  background-color: #80ab9f !important;
+}
+
 .font-primary {
   font-family: Hatton;
 }
 
 .font-secondary {
   font-family: Hatton Light;
+}
+
+.text-selected {
+  color: #58746c !important;
 }
 
 .text-primary {
@@ -80,6 +92,15 @@ a:hover {
 }
 
 .t-scale:hover {
+  transform: scale(1.1);
+}
+
+.t-scaleX {
+  transition: all 0.2s ease-in !important;
+}
+
+.t-scaleX:hover {
+  margin-left: 15px !important;
   transform: scale(1.1);
 }
 

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="alternate stylesheet"
+      title="Alternative"
+      href="css/alternative.css"
+    />
   </head>
   <body class="bg-primary">
     <!-- Principal Menu -->
@@ -19,17 +24,17 @@
         >
           LA KORIANDA
         </a>
-        <p class="pe-2 c-pointer fs-1 h-color menu_content" onclick="openNav()">
+        <p class="pe-2 c-pointer fs-1 h-color menu_content" id="openNav">
           &#9776;
         </p>
         <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <a href="javascript:void(0)" class="closebtn" id="closeNav">
             &times;
           </a>
           <div class="overlay-content">
-            <a href="#" class="text-primary">LA KORIANDA</a>
-            <a href="#about_us">NOSOTROS</a>
-            <a href="#">MENÚS</a>
+            <a href="./index.html" class="text-primary">LA KORIANDA</a>
+            <a href="./index.html#about_us">NOSOTROS</a>
+            <a href="./menus.html">MENÚS</a>
             <a href="#">RESERVAS</a>
             <a href="#">CONTACTO</a>
           </div>
@@ -41,17 +46,17 @@
       <div class="container-fluid fw-bold">
         <ul class="navbar-nav">
           <li class="nav-item mx-4">
-            <a class="nav-link" href="#about_us">NOSOTROS</a>
+            <a class="nav-link" href="./index.html#about_us">NOSOTROS</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" href="#">MENÚS</a>
+            <a class="nav-link" href="./menus.html">MENÚS</a>
           </li>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item m-0">
             <a
               class="navbar-brand nav-link fs-1 font-primary m-0 t-scale"
-              href="#"
+              href="./index.html"
             >
               LA KORIANDA
             </a>
@@ -72,99 +77,140 @@
     <div
       class="d-flex justify-content-center align-items-center position-relative"
     >
-      <img src="images/index/header.jpeg" alt="..." id="headImg" />
+      <img
+        src="images/index/header.jpeg"
+        alt="cabecera La Korianda"
+        id="headImg"
+      />
       <div
         id="textHeader"
-        class="d-grid align-content-center text-center text-white font-secondary position-absolute rounded-circle"
+        class="d-grid align-content-center text-center text-white position-absolute rounded-circle"
       >
-        <p class="fs-1">¡Bienvenido/a!</p>
-        <p class="fs-2">Toda una carta apta para celiacos</p>
+        <p class="fs-1 font-primary">¡Bienvenido/a!</p>
+        <p class="fs-2 font-secondary">Toda una carta apta para celiacos</p>
       </div>
     </div>
+
+    <i class="fa-solid fa-circle-arrow-up fs-1" id="btnUp" title="Go to top"></i>
 
     <!-- About Us -->
     <div class="container-fluid my-5 p-5" id="about_us">
       <div class="row">
-        <div class="mb-sm-5 col-sm-12 col-lg-6 d-flex align-items-center justify-content-center mb-auto mb-sm-0">
-          <img src="images/index/about_us.png" alt="..." width="95%" style="max-width: 500px";/>
+        <div
+          class="mb-sm-5 col-sm-12 col-lg-6 d-flex align-items-center justify-content-center mb-auto mb-sm-0"
+        >
+          <img
+            src="images/index/about_us.png"
+            alt="sobre nosotros"
+            width="95%"
+            style="max-width: 500px"
+            ;
+          />
         </div>
-        <div class="mt-sm-5 col-sm-12 col-lg-6 d-flex align-items-center justify-content-center pe-lg-5">
+        <div
+          class="mt-sm-5 col-sm-12 col-lg-6 d-flex align-items-center justify-content-center pe-lg-5"
+        >
           <div>
             <h2 class="font-primary">LA KORIANDA</h2>
             <p class="fs-7 mt-4">
-              Un restaurante gluten-free asequible ofrece opciones de comida sin gluten para personas 
-              con intolerancias o preferencias dietéticas específicas. Ofrece platos típicos, desde ensaladas
-              hasta postres, sin gluten y con un personal amable y conciente. Con un ambiente acogedor y 
-              una amplia variedad de opciones, es perfecto para aquellos que buscan una experiencia culinaria 
-              sin preocupaciones. En resumen, es una opción ideal para disfrutar de una comida deliciosa y segura 
-              sin sacrificar el presupuesto.
+              Un restaurante gluten-free asequible ofrece opciones de comida sin
+              gluten para personas con intolerancias o preferencias dietéticas
+              específicas. Ofrece platos típicos, desde ensaladas hasta postres,
+              sin gluten y con un personal amable y conciente. Con un ambiente
+              acogedor y una amplia variedad de opciones, es perfecto para
+              aquellos que buscan una experiencia culinaria sin preocupaciones.
+              En resumen, es una opción ideal para disfrutar de una comida
+              deliciosa y segura sin sacrificar el presupuesto.
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    <hr class="border-3 col-sm-12 col-lg-10 mx-auto"/>
-    
+    <hr class="border-3 col-sm-12 col-lg-10 mx-auto" />
+
     <!-- Gallery -->
     <div class="container-fluid py-5 my-5">
-      <div>
-        <div class="row px-5">
+      <div class="d-flex justify-content-center">
+        <div class="row px-5 col-10">
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria1.jpeg" alt="image1" />
+              <img src="images/index/gallery/gallery1.jpeg" alt="atun marinado con papas arrugadas y mojo" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Atún marinado con papas arrugadas y mojo</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria2.jpeg" alt="image2" />
+              <img src="images/index/gallery/gallery2.jpeg" alt="huevos rotos con jamon y salsa especial" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Huevos rotos con jamón y salsa especial</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria3.jpeg" alt="image3" />
+              <img src="images/index/gallery/gallery3.jpeg" alt="cochinito cocinado en su jugo con salsa de mago, verduras y papas" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Cochinito cocinado en su jugo con salsa de mago, verduras y papas</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria4.jpeg" alt="image4" />
+              <img src="images/index/gallery/gallery4.jpeg" alt="tarta de zanahoria con frostie de queso" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Tarta de zanahoria con frostie de queso</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria5.jpeg" alt="image4" />
+              <img src="images/index/gallery/gallery5.jpeg" alt="mini pizza de mozzarela, tomate y albahaca" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Mini pizza de mozzarela, tomate y albahaca</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria6.jpeg" alt="image6" />
+              <img src="images/index/gallery/gallery6.jpeg" alt="fideua de langostinos y almejas con el toque del chef" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Fideuá de langostinos y almejas con el toque del chef</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/gallery7.jpeg" alt="galletas de chocolate" />
+              <div class="description">
+                <p class="fs-20">Galletas de chocolate</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/gallery8.jpeg" alt="fideos al wok con verduras" />
+              <div class="description">
+                <p class="fs-20">Fideos al wok con verduras</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/gallery9.jpeg" alt="crema del dia" />
+              <div class="description">
+                <p class="fs-20">Crema del día</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
 
     <!-- Footer -->
-    <div style="background-color: #80ab9f; color: #322203">
+    <div class="bg-secondary text-primary">
       <div class="col-12 pt-5">
         <div class="d-flex justify-content-center">
           <h3 class="font-primary footer-element">LA KORIANDA</h3>

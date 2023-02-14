@@ -1,8 +1,17 @@
+@font-face {
+  font-family: Hatton;
+  src: url(../fonts/pp_hatton_medium.otf);
+}
 
+@font-face {
+  font-family: Hatton Light;
+  src: url(../fonts/pp_hatton_ultralight.otf);
+}
 
 .container {
+  font-family: Hatton Light;
   color: #573C09 !important;
-  width: 70%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -13,8 +22,8 @@ hr{
   color: black;
 }
 
-h2 h1 {
-  color: #322203 !important;
+ h1 {
+  font-family: Hatton !important;;
   margin-top: 1rem;
 }
 
@@ -39,20 +48,22 @@ h2 h1 {
 
 
 
-
 input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="date"],
 input[type="time"],
 textarea {
+  
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #FFFFF0 !important;
   border: 1px solid #80AB9F !important;
   border-radius: 8px;
   padding: 0.5rem;
-  width: 100%;
+  width: 100% !important;
   border: none;
-  margin-top: 1rem
+  margin-top: 1rem;
+  margin-left: 0.5em !important;
 }
 
 input[type="text"]:focus,
@@ -68,15 +79,20 @@ textarea:focus {
 
 
 button{
-  color: #FFFFF0 !important;
-  background-color: #573C09!important;
+  font-family: Hatton !important;
+  color: #573C09 !important;
+  background-color: #FFFFF0 !important;
   text-align: center;
-  width: 10% !important;
-  border: 2px solid #573C09 !important;
+  width: 20% !important;
+  border: 2px solid #80AB9F !important;
 }
 button:hover{
-  background-color: #322203 !important;
-  color: #f5f5f5 !important;
+  background-color: #573C09   !important;
+  color: #FFFFF0!important;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.btn-min-width{
+  min-width: 100px;
 }

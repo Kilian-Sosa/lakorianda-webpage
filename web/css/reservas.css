@@ -1,0 +1,82 @@
+
+
+.container {
+  color: #573C09 !important;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  
+}
+
+hr{
+  color: black;
+}
+
+h2 h1 {
+  color: #322203 !important;
+  margin-top: 1rem;
+}
+
+
+
+#ubicacion {
+  color: #ffffff;
+  background: #80AB9F ;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#cabecera {
+  margin: 0px auto;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+textarea {
+  background-color: #FFFFF0 !important;
+  border: 1px solid #80AB9F !important;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  margin-top: 1rem
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus {
+  background-color: #FFFFF0 !important;
+  border: 1px solid #999;
+  outline: none;
+}
+
+
+button{
+  color: #FFFFF0 !important;
+  background-color: #573C09!important;
+  text-align: center;
+  width: 10% !important;
+  border: 2px solid #573C09 !important;
+}
+button:hover{
+  background-color: #322203 !important;
+  color: #f5f5f5 !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

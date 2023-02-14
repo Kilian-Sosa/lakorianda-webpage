@@ -1,0 +1,8 @@
+.seleccionado {
+  padding-bottom: 9px !important;
+  border-bottom: solid 3px #000 !important;
+}
+
+.tabcontent {
+  display: none;
+}

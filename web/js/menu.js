@@ -9,7 +9,7 @@ oNav.addEventListener("click", openNav);
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
   menucontent.forEach((element) => {
-    element.style.color = "#F8F9FA";
+    element.style.color = "#fffff0";
   });
 }
 

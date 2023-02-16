@@ -11,12 +11,19 @@
 .container {
   font-family: Hatton Light;
   color: #573C09 !important;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  
 }
+
+.formularios{
+  color:  #ffffff !important;
+  text-decoration: underline !important;
+}
+
+.formularios:hover {
+  color: #573C09 !important;
+}
+
+
+
 
 #ubicacion {
   color: #ffffff;
@@ -24,14 +31,6 @@
   border-radius: 8px;
 }
 
-#cabecera {
-  margin: 0px auto;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-}
 
 #mapa{
   max-width: 300px;
@@ -63,19 +62,19 @@ textarea:focus {
   outline: none;
 }
 
+
 button{
   font-family: Hatton !important;
   color: #573C09 !important;
   background-color: #FFFFF0 !important;
   text-align: center;
-  width: 20% !important;
+  width: 15% !important;
   border: 2px solid #80AB9F !important;
 }
 
 button:hover{
-  background-color: #573C09   !important;
+  background-color: #80AB9F   !important;
   color: #FFFFF0!important;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 

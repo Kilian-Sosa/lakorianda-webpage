@@ -1,14 +1,3 @@
-@font-face {
-  font-family: Hatton;
-  src: url(../fonts/pp_hatton_medium.otf);
-}
-
-@font-face {
-  font-family: Hatton Light;
-  src: url(../fonts/pp_hatton_ultralight.otf);
-}
-
-
 
 .formularios{
   color:  #ffffff !important;
@@ -18,8 +7,6 @@
 .formularios:hover {
   color: #573C09 !important;
 }
-
-
 
 
 input[type="text"],

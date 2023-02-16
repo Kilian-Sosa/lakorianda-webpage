@@ -1,0 +1,59 @@
+
+hr{
+  color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+textarea {
+  background-color: #FFFFF0 !important;
+  border: 1px solid #80AB9F !important;
+  border-radius: 8px;
+  padding: 0.5rem;
+  border: none;
+  margin-top: 1rem;
+  margin-left: 0.5em !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus {
+  background-color: #FFFFF0 !important;
+  border: 1px solid #999;
+  outline: none;
+}
+
+.formularios{
+  color:  #ffffff !important;
+  text-decoration: underline !important;
+}
+
+.formularios:hover {
+  color: #573C09 !important;
+}
+
+
+button{
+  font-family: Hatton !important;
+  color: #573C09 !important;
+  background-color: #FFFFF0 !important;
+  text-align: center;
+  width: 15% !important;
+  border: 2px solid #80AB9F !important;
+}
+
+button:hover{
+  background-color: #80AB9F   !important;
+  color: #FFFFF0!important;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-min-width{
+  min-width: 100px;
+}

@@ -1,0 +1,17 @@
+a {
+  color: #322203;
+}
+
+.footer-element {
+  transition: all 0.2s ease-in;
+}
+
+.footer-element:hover {
+  color: #fffff0 !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .links {
+    display: none;
+  }
+}

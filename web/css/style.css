@@ -1,0 +1,137 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import "bootstrap.css";
+@import "menu.css";
+@import "footer.css";
+
+@font-face {
+  font-family: Hatton;
+  src: url(../fonts/pp_hatton_medium.otf);
+}
+
+@font-face {
+  font-family: Hatton Light;
+  src: url(../fonts/pp_hatton_ultralight.otf);
+}
+
+@media print {
+  .menu,
+  .footer {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in !important;
+}
+
+a:hover {
+  color: #80ab9f !important;
+}
+
+.bg-primary {
+  background-color: #fffff0 !important;
+}
+
+.bg-secondary {
+  background-color: #80ab9f !important;
+}
+
+.font-primary {
+  font-family: Hatton;
+}
+
+.font-secondary {
+  font-family: Hatton Light;
+}
+
+.text-selected {
+  color: #80ab9f !important;
+}
+
+.text-primary {
+  color: #322203 !important;
+}
+
+.text-secondary {
+  color: #573c09 !important;
+}
+
+.btn-outline-primary,
+.border-primary {
+  color: #000000;
+  border: none;
+  outline: 2px solid #80ab9f;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #ffffff;
+  background-color: #80ab9f !important;
+}
+
+.btn-outline-primary:focus,
+.btn-close:focus,
+.form-control:focus,
+.form-check-input:focus {
+  border: none;
+  outline: 2px solid #80ab9f;
+  box-shadow: 0 0 0 5px rgba(128, 171, 159, 0.5);
+}
+
+.form-check-input:checked {
+  border-color: #80ab9f;
+  background-color: #80ab9f;
+}
+
+.t-scale {
+  transition: all 0.2s ease-in !important;
+}
+
+.t-scale:hover {
+  transform: scale(1.1);
+}
+
+.t-scaleX {
+  transition: all 0.2s ease-in !important;
+}
+
+.t-scaleX:hover {
+  margin-left: 15px !important;
+  transform: scale(1.1);
+}
+
+.h-color:hover {
+  color: #80ab9f !important;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  color: #ffffff;
+  background: #80ab9f;
+}
+
+::selection {
+  color: #ffffff;
+  background: #80ab9f;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #cccccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #80ab9f;
+}

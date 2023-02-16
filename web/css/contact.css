@@ -1,44 +1,11 @@
-@font-face {
-  font-family: Hatton;
-  src: url(../fonts/pp_hatton_medium.otf);
+
+.formularios{
+  color:  #ffffff !important;
+  text-decoration: underline !important;
 }
 
-@font-face {
-  font-family: Hatton Light;
-  src: url(../fonts/pp_hatton_ultralight.otf);
-}
-
-.container {
-  font-family: Hatton Light;
+.formularios:hover {
   color: #573C09 !important;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  
-}
-
-#ubicacion {
-  color: #ffffff;
-  background: #80AB9F ;
-  border-radius: 8px;
-}
-
-#cabecera {
-  margin: 0px auto;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-
-#mapa{
-  max-width: 300px;
-  max-height: 273px;
-  width: 150%;
-  padding-top: 1rem;
-  height: 150%;
 }
 
 
@@ -68,14 +35,13 @@ button{
   color: #573C09 !important;
   background-color: #FFFFF0 !important;
   text-align: center;
-  width: 20% !important;
+  width: 15% !important;
   border: 2px solid #80AB9F !important;
 }
 
 button:hover{
-  background-color: #573C09   !important;
+  background-color: #80AB9F   !important;
   color: #FFFFF0!important;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
@@ -89,33 +55,12 @@ iframe{
   height: 100%;
 }
 
-@media only screen and (max-width: 992px) {
-  #row2{
-    display: flex;
-    justify-content: center;
-  }
 
-  #ubiImg{
-    margin-top: -45px;
-  }
 
-  iframe{
-    margin-left: -70px;
-    width: 150%;
-  }
+@media only screen and (max-width: 426px){
 
-  #divButton{
-    margin-top: 130px !important;
+  #mapa{
+    width: 90%;
   }
-}
-
-@media only screen and (max-width: 575px){
-  #contact{
-    margin-top: 5px !important;
-  }
-
-  iframe{
-    margin-left: 10px;
-    width: 105%;
-  }
+ 
 }

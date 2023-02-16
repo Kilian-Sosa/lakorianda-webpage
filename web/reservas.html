@@ -15,10 +15,10 @@
   <!-- Principal Menu -->
   <nav class="navbar navbar-expand menu_mobile">
     <div class="container-fluid">
-      <a class="navbar-brand nav-link fs-1 font-primary m-0 menu_content" href="#">
+      <a class="navbar-brand nav-link fs-1 font-primary text-primary m-0 menu_content" href="./index.html">
         LA KORIANDA
       </a>
-      <p class="pe-2 c-pointer fs-1 h-color menu_content" id="openNav">
+      <p class="pe-2 c-pointer fs-1 h-color menu_content text-primary" id="openNav">
         &#9776;
       </p>
       <div id="myNav" class="overlay">
@@ -28,9 +28,9 @@
         <div class="overlay-content">
           <a href="./index.html">LA KORIANDA</a>
           <a href="./index.html#about_us">NOSOTROS</a>
-          <a href="./menus.html" class="text-primary">MENÚS</a>
-          <a href="./reservas.html">RESERVAS</a>
-          <a href="#">CONTACTO</a>
+          <a href="./menus.html">MENÚS</a>
+          <a href="./reservas.html" class="text-primary">RESERVAS</a>
+          <a href="./contact.html">CONTACTO</a>
         </div>
       </div>
     </div>
@@ -48,48 +48,48 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item m-0">
-          <a class="navbar-brand nav-link fs-1 font-primary m-0 t-scale" href="./index.html">
+          <a class="navbar-brand nav-link fs-1 font-primary m-0 text-primary t-scale" href="./index.html">
             LA KORIANDA
           </a>
         </li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item mx-4">
-          <a class="nav-link" href="./reservas.html">RESERVAS</a>
+          <a class="nav-link text-selected" href="./reservas.html">RESERVAS</a>
         </li>
         <li class="nav-item mx-4">
-          <a class="nav-link" href="#">CONTACTO</a>
+          <a class="nav-link" href="./contact.html">CONTACTO</a>
         </li>
       </ul>
     </div>
   </nav>
   <hr class="mt-0 border-3" />
 
-
-  <div class="container text-center mt-5">
+  <div class="container text-center">
     <div id="ubicacion">
-      <div class="row">
+      <div class="row py-4">
         <div class="col-12 mt-1">
-          <h1>Hacer una Reserva</h1>
+          <p class="fs-2 font-primary">Hacer una Reserva</p>
         </div>
       </div>
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-4">
-          <h3 id="cabecera">Horario</h3>
-          <p>De Lunes a Viernes: 9:00 - 17:00</p>
+          <h3 id="cabecera" style="margin-top: -20px">Horario</h3>
+          <p class="m-0">De Lunes a Viernes: 9:00 - 17:00</p>
           <p>Sábados, Domingos y Festivos: Cerrados</p>
         </div>
         <div class="col-12 col-sm-6 col-lg-4">
-          <p>En Horario de Servicio</p>
-          <div class="row">
-            <p class="col-12"><i class="fab fa-whatsapp fs-4"></i> +34 689545230</p>
+          <p style="margin-top: -20px">En Horario de Servicio</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <p><i class="fab fa-whatsapp fs-4 mx-1"></i></p>
+            <p>+34 689545230</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container mt-4 mb-2" style="width: 50%;">
+  <div class="container mt-4 mb-5" style="width: 50%;">
     <div class="row text-center">
       <div class="col-12">
         <div class="col-12 d-md-flex justify-content-center justify-content-md-between">
@@ -98,25 +98,25 @@
         </div>
         <div class="col-12 d-md-flex justify-content-center justify-content-md-between">
           <input type="text" class="form-control mb-3 mb-md-0 mr-md-3" placeholder="Teléfono">
-          <input type="number" class="form-control mb-3 mb-md-0 ml-md-3" placeholder="Nº de Comensales">
+          <input type="number" class="form-control mb-3 mb-md-0 ml-md-3" min="1" max="10" placeholder="Nº de Comensales">
         </div>
         <div class="col-12 d-md-flex justify-content-center justify-content-md-between">
-          <input type="date" class="form-control mb-3 mb-md-0 mr-md-3" placeholder="Fecha">
+          <input type="date" class="form-control mb-3 mb-md-0 mr-md-3" id="datePicker" placeholder="Fecha">
           <input type="time" class="form-control mb-3 mb-md-0 ml-md-3" placeholder="Hora">
         </div>
-        <div class="form-group">
+        <div class="form-group me-md-2">
           <textarea class="form-control" rows="3" placeholder="A tener en cuenta..."></textarea>
         </div>
       </div>
       <div id="divButton" class="col-12 text-center mt-5">
-        <button type="submit" class="btn btn-primary btn-block text-wrap mb-5 btn-min-width">Reservar</button>
+        <button type="submit" class="btn btn-primary btn-block text-wrap btn-min-width">Reservar</button>
       </div>
     </div>
   </div>
 
 
   <!-- Footer -->
-  <div style="background-color: #80ab9f; color: #322203">
+    <div class="bg-secondary text-primary">
     <div class="col-12 pt-5">
       <div class="d-flex justify-content-center">
         <h3 class="font-primary footer-element">LA KORIANDA</h3>
@@ -144,16 +144,14 @@
     </div>
     <div class="col-12 pb-4 mt-sm-2 mt-sm-4 mt-lg-2">
       <div class="d-flex justify-content-center">
-        <i class="fa-brands footer-element fa-facebook mx-4 fs-1"></i>
-        <i class="fa-brands footer-element fa-instagram mx-4 fs-1"></i>
-        <i class="fa-brands footer-element fa-whatsapp mx-4 fs-1"></i>
+        <a  href="https://www.facebook.com/La-Korianda-102605378962438/" target="_blank"><i class="fa-brands footer-element fa-facebook mx-4 fs-1"></i></a>
+        <a  href="https://www.instagram.com/lakorianda/" target="_blank"><i class="fa-brands footer-element fa-instagram mx-4 fs-1"></i></a>
+        <a  href="https://wa.me/+34689545230" target="_blank"><i class="fa-brands footer-element fa-whatsapp mx-4 fs-1"></i></a>
       </div>
     </div>
   </div>
 
   <script src="js/bootstrap.js"></script>
   <script src="js/menu.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/reservas.js"></script>
 </body>
-
-</html>

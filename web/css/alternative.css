@@ -35,6 +35,10 @@ i {
   font-family: "Font Awesome 6 Brands" !important;
 }
 
+#btnUp {
+  font-family: "Font Awesome 6 Free" !important;
+}
+
 .polaroid:hover,
 .t-scale:hover {
   transform: none;

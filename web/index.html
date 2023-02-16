@@ -19,8 +19,8 @@
     <nav class="navbar navbar-expand menu_mobile">
       <div class="container-fluid">
         <a
-          class="navbar-brand nav-link fs-1 font-primary m-0 menu_content t-scaleX"
-          href="./index.html"
+          class="navbar-brand nav-link fs-1 font-primary m-0 menu_content"
+          href="#"
         >
           LA KORIANDA
         </a>
@@ -33,10 +33,10 @@
           </a>
           <div class="overlay-content">
             <a href="./index.html" class="text-primary">LA KORIANDA</a>
-            <a href="#about_us">NOSOTROS</a>
+            <a href="./index.html#about_us">NOSOTROS</a>
             <a href="./menus.html">MENÚS</a>
             <a href="./reservas.html">RESERVAS</a>
-            <a href="#">CONTACTO</a>
+            <a href="./contact.html">CONTACTO</a>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
       <div class="container-fluid fw-bold">
         <ul class="navbar-nav">
           <li class="nav-item mx-4">
-            <a class="nav-link" href="#about_us">NOSOTROS</a>
+            <a class="nav-link" href="./index.html#about_us">NOSOTROS</a>
           </li>
           <li class="nav-item mx-4">
             <a class="nav-link" href="./menus.html">MENÚS</a>
@@ -55,7 +55,7 @@
         <ul class="navbar-nav">
           <li class="nav-item m-0">
             <a
-              class="navbar-brand nav-link fs-1 font-primary m-0 t-scale"
+              class="navbar-brand nav-link fs-1 font-primary m-0 text-primary t-scale"
               href="./index.html"
             >
               LA KORIANDA
@@ -67,7 +67,7 @@
             <a class="nav-link" href="./reservas.html">RESERVAS</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link" href="#">CONTACTO</a>
+            <a class="nav-link" href="./contact.html">CONTACTO</a>
           </li>
         </ul>
       </div>
@@ -79,7 +79,7 @@
     >
       <img
         src="images/index/header.jpeg"
-        alt="Cabecera La Korianda"
+        alt="cabecera La Korianda"
         id="headImg"
       />
       <div
@@ -91,6 +91,8 @@
       </div>
     </div>
 
+    <i class="fa-solid fa-circle-arrow-up fs-1" id="btnUp" title="Go to top"></i>
+
     <!-- About Us -->
     <div class="container-fluid my-5 p-5" id="about_us">
       <div class="row">
@@ -99,7 +101,7 @@
         >
           <img
             src="images/index/about_us.png"
-            alt="Sobre Nosotros"
+            alt="sobre nosotros"
             width="95%"
             style="max-width: 500px"
             ;
@@ -108,9 +110,9 @@
         <div
           class="mt-sm-5 col-sm-12 col-lg-6 d-flex align-items-center justify-content-center pe-lg-5"
         >
-          <div>
-            <h2 class="font-primary">LA KORIANDA</h2>
-            <p class="fs-7 mt-4">
+          <div class="mt-5">
+            <h2 class="font-primary text-primary">LA KORIANDA</h2>
+            <p class="fs-5 mt-4 col-11 text-secondary font-secondary fw-bold">
               Un restaurante gluten-free asequible ofrece opciones de comida sin
               gluten para personas con intolerancias o preferencias dietéticas
               específicas. Ofrece platos típicos, desde ensaladas hasta postres,
@@ -129,53 +131,77 @@
 
     <!-- Gallery -->
     <div class="container-fluid py-5 my-5">
-      <div>
-        <div class="row px-5">
+      <div class="d-flex justify-content-center">
+        <div class="row px-5 col-10 text-primary font-secondary fw-bold">
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria1.jpeg" alt="image1" />
+              <img src="images/index/gallery/gallery1.jpeg" alt="atun marinado con papas arrugadas y mojo" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Atún marinado con papas arrugadas y mojo</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria2.jpeg" alt="image2" />
+              <img src="images/index/gallery/gallery2.jpeg" alt="huevos rotos con jamon y salsa especial" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Huevos rotos con jamón, orégano y salsa especial</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria3.jpeg" alt="image3" />
+              <img src="images/index/gallery/gallery3.jpeg" alt="cochinito cocinado en su jugo con salsa de mago, verduras y papas" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Cochinito cocinado en su jugo con salsa de mago, verduras y papas</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria4.jpeg" alt="image4" />
+              <img src="images/index/gallery/gallery4.jpeg" alt="tarta de zanahoria con frostie de queso" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Tarta de zanahoria con frostie de crema de queso</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria5.jpeg" alt="image4" />
+              <img src="images/index/gallery/gallery5.jpg" alt="berenjena rellena con ensalada de quinoa" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Berenjena rellena con ensalada de quinoa</p>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-4 col-sm-6 mt-5">
             <div class="polaroid mx-auto">
-              <img src="images/index/gallery/galeria6.jpeg" alt="image6" />
+              <img src="images/index/gallery/gallery6.jpeg" alt="fideua de langostinos y almejas con el toque del chef" />
               <div class="description">
-                <p class="fs-20">Lore ipsum lore ipsum lore ipsum</p>
+                <p class="fs-20">Fideuá de langostinos y almejas con el toque del chef</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/gallery7.jpeg" alt="galletas de chocolate" />
+              <div class="description">
+                <p class="fs-20">Galletas de chocolate</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/gallery8.jpeg" alt="fideos al wok con verduras" />
+              <div class="description">
+                <p class="fs-20">Fideos al wok con verduras</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-6 mt-5">
+            <div class="polaroid mx-auto">
+              <img src="images/index/gallery/gallery9.jpeg" alt="crema del dia" />
+              <div class="description">
+                <p class="fs-20">Crema del día</p>
               </div>
             </div>
           </div>
@@ -212,9 +238,9 @@
       </div>
       <div class="col-12 pb-4 mt-sm-2 mt-sm-4 mt-lg-2">
         <div class="d-flex justify-content-center">
-          <i class="fa-brands footer-element fa-facebook mx-4 fs-1"></i>
-          <i class="fa-brands footer-element fa-instagram mx-4 fs-1"></i>
-          <i class="fa-brands footer-element fa-whatsapp mx-4 fs-1"></i>
+          <a  href="https://www.facebook.com/La-Korianda-102605378962438/" target="_blank"><i class="fa-brands footer-element fa-facebook mx-4 fs-1"></i></a>
+          <a  href="https://www.instagram.com/lakorianda/" target="_blank"><i class="fa-brands footer-element fa-instagram mx-4 fs-1"></i></a>
+          <a  href="https://wa.me/+34689545230" target="_blank"><i class="fa-brands footer-element fa-whatsapp mx-4 fs-1"></i></a>
         </div>
       </div>
     </div>

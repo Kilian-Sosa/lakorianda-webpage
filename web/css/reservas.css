@@ -1,43 +1,7 @@
-@font-face {
-  font-family: Hatton;
-  src: url(../fonts/pp_hatton_medium.otf);
-}
-
-@font-face {
-  font-family: Hatton Light;
-  src: url(../fonts/pp_hatton_ultralight.otf);
-}
-
-.container {
-  font-family: Hatton Light;
-  color: #573C09 !important;
-}
-
 
 hr{
   color: black;
 }
-
- h1 {
-  font-family: Hatton !important;;
-  margin-top: 1rem;
-}
-
-
-
-#ubicacion {
-  color: #ffffff;
-  background: #80AB9F ;
-  border-radius: 8px;
-}
-
-
-
-.row {
-  justify-content: space-between;
-}
-
-
 
 input[type="text"],
 input[type="email"],
@@ -45,7 +9,6 @@ input[type="number"],
 input[type="date"],
 input[type="time"],
 textarea {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #FFFFF0 !important;
   border: 1px solid #80AB9F !important;
   border-radius: 8px;

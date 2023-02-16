@@ -8,10 +8,7 @@
   src: url(../fonts/pp_hatton_ultralight.otf);
 }
 
-.container {
-  font-family: Hatton Light;
-  color: #573C09 !important;
-}
+
 
 .formularios{
   color:  #ffffff !important;
@@ -23,22 +20,6 @@
 }
 
 
-
-
-#ubicacion {
-  color: #ffffff;
-  background: #80AB9F ;
-  border-radius: 8px;
-}
-
-
-#mapa{
-  max-width: 300px;
-  max-height: 273px;
-  width: 150%;
-  padding-top: 1rem;
-  height: 150%;
-}
 
 
 input[type="text"],
@@ -88,33 +69,12 @@ iframe{
   height: 100%;
 }
 
-@media only screen and (max-width: 992px) {
-  #row2{
-    display: flex;
-    justify-content: center;
-  }
 
-  #ubiImg{
-    margin-top: -45px;
-  }
 
-  iframe{
-    margin-left: -70px;
-    width: 150%;
-  }
+@media only screen and (max-width: 426px){
 
-  #divButton{
-    margin-top: 130px !important;
+  #mapa{
+    width: 90%;
   }
-}
-
-@media only screen and (max-width: 575px){
-  #contact{
-    margin-top: 5px !important;
-  }
-
-  iframe{
-    margin-left: 10px;
-    width: 105%;
-  }
+ 
 }

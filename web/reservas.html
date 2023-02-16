@@ -15,10 +15,10 @@
   <!-- Principal Menu -->
   <nav class="navbar navbar-expand menu_mobile">
     <div class="container-fluid">
-      <a class="navbar-brand nav-link fs-1 font-primary m-0 menu_content" href="#">
+      <a class="navbar-brand nav-link fs-1 font-primary text-primary m-0 menu_content" href="./index.html">
         LA KORIANDA
       </a>
-      <p class="pe-2 c-pointer fs-1 h-color menu_content" id="openNav">
+      <p class="pe-2 c-pointer fs-1 h-color menu_content text-primary" id="openNav">
         &#9776;
       </p>
       <div id="myNav" class="overlay">
@@ -48,14 +48,14 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item m-0">
-          <a class="navbar-brand nav-link fs-1 font-primary m-0 t-scale" href="./index.html">
+          <a class="navbar-brand nav-link fs-1 font-primary m-0 text-primary t-scale" href="./index.html">
             LA KORIANDA
           </a>
         </li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item mx-4">
-          <a class="nav-link" href="./reservas.html">RESERVAS</a>
+          <a class="nav-link text-selected" href="./reservas.html">RESERVAS</a>
         </li>
         <li class="nav-item mx-4">
           <a class="nav-link" href="./contact.html">CONTACTO</a>
@@ -64,7 +64,6 @@
     </div>
   </nav>
   <hr class="mt-0 border-3" />
-
 
   <div class="container text-center">
     <div id="ubicacion">
@@ -80,36 +79,35 @@
           <p>Sábados, Domingos y Festivos: Cerrados</p>
         </div>
         <div class="col-12 col-sm-6 col-lg-4">
-          <p style="margin-top: -20px">En Horario de Servicio</p>
-          <div class="d-flex justify-content-center align-items-center">
-            <p><i class="fab fa-whatsapp fs-4 mx-1"></i></p>
-            <p>+34 689545230</p>
+          <p>En Horario de Servicio</p>
+          <div class="row">
+           <a class="formularios" href=""><p class="col-12"><i class="fab fa-whatsapp fs-4"></i> +34 689545230</p></a> 
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container mt-4 mb-2" style="width: 50%;">
-    <div class="row text-center">
-      <div class="col-12">
-        <div class="col-12 d-md-flex justify-content-center justify-content-md-between">
-          <input type="text" class="form-control mb-3 mb-md-0 mr-md-3" required placeholder="Nombre *">
-          <input type="email" class="form-control mb-3 mb-md-0 ml-md-3" required placeholder="Email">
+  <div class="container mt-5 mb-2">
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-md-10" >
+        <div class="col-12 d-md-flex justify-content-center">
+          <input type="text" class="form-control" required placeholder="Nombre *">
+          <input type="email" class="form-control " placeholder="Email">
         </div>
-        <div class="col-12 d-md-flex justify-content-center justify-content-md-between">
-          <input type="text" class="form-control mb-3 mb-md-0 mr-md-3" required placeholder="Teléfono *">
-          <input type="number" class="form-control mb-3 mb-md-0 ml-md-3" required min="1" max="10" placeholder="Nº de Comensales *">
+        <div class="col-12 d-md-flex justify-content-center">
+          <input type="text" class="form-control" required placeholder="Teléfono *">
+          <input type="number" class="form-control" required min="1" max="10" placeholder="Nº de Comensales">
         </div>
-        <div class="col-12 d-md-flex justify-content-center justify-content-md-between">
-          <input type="date" class="form-control mb-3 mb-md-0 mr-md-3" required id="datePicker" placeholder="Fecha *">
-          <input type="time" class="form-control mb-3 mb-md-0 ml-md-3" required id="hourPicker" min="09:00:00" max="17:00:00" placeholder="Hora *">
+        <div class="col-12 d-md-flex justify-content-center">
+          <input type="date" class="form-control" required id="datePicker" placeholder="Fecha *">
+          <input type="time" class="form-control" required id="hourPicker" min="09:00:00" max="17:00:00" placeholder="Hora *">
         </div>
         <div class="form-group">
           <textarea class="form-control" rows="3" placeholder="A tener en cuenta..."></textarea>
         </div>
       </div>
-      <div id="divButton" class="col-12 text-center mt-5">
+      <div  class="col-12 text-center mt-5">
         <button type="submit" class="btn btn-primary btn-block text-wrap mb-5 btn-min-width">Reservar</button>
       </div>
     </div>

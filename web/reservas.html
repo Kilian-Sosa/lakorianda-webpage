@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/reservas.css" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link
+    rel="alternate stylesheet"
+    title="Alternative"
+    href="css/alternative.css"
+  />
 </head>
 
 <body class="bg-primary">
@@ -88,30 +93,42 @@
     </div>
   </div>
 
-  <div class="container mt-4 mb-1 col-10">
-    <div class="row justify-content-center text-center">
-      <div class="col-12 col-md-10  text-secondary">
-        <div class="col-12 d-md-flex justify-content-center">
-          <input type="text" class="form-control" placeholder="Nombre">
-          <input type="email" class="form-control " placeholder="Email">
+  <form id="form" action="javascript:void(0);">
+    <div class="container mt-4 mb-1 col-10">
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-md-10  text-secondary">
+          <div class="col-12 d-md-flex justify-content-center">
+            <input id="nombre" type="text" class="form-control" placeholder="Nombre *" required>
+            <input id="email" type="email" class="form-control " placeholder="Email *" required>
+          </div>
+          <div class="col-12 d-md-flex justify-content-center">
+            <input id="telefono" type="text" class="form-control" minlength="9" placeholder="Teléfono *" required>
+            <input id="comensales" type="number" class="form-control" min="2" max="10" placeholder="Nº de Comensales *" required>
+          </div>
+          <div class="col-12 d-md-flex justify-content-center">
+            <input id="fecha" type="date" class="form-control" placeholder="Fecha *" required>
+            <input id="hora" type="time" class="form-control" placeholder="Hora *" required>
+          </div>
+          <div class="col-12 d-md-flex justify-content-center">
+            <textarea id="texto" class="form-control" rows="3" placeholder="A tener en cuenta..."></textarea>
+          </div>
         </div>
-        <div class="col-12 d-md-flex justify-content-center">
-          <input type="text" class="form-control" placeholder="Teléfono">
-          <input type="number" class="form-control " placeholder="Nº de Comensales">
+        <div class="col-12 text-center mt-5">
+          <button type="submit" class="btn btn-primary btn-block text-wrap mb-5 btn-min-width">Reservar</button>
         </div>
-        <div class="col-12 d-md-flex justify-content-center">
-          <input type="date" class="form-control" placeholder="Fecha">
-          <input type="time" class="form-control " placeholder="Hora">
-        </div>
-        <div class="col-12 d-md-flex justify-content-center">
-          <textarea class="form-control" rows="3" placeholder="A tener en cuenta..."></textarea>
-        </div>
-      </div>
-      <div class="col-12 text-center mt-5">
-        <button type="submit" class="btn btn-primary btn-block text-wrap mb-5 btn-min-width">Reservar</button>
       </div>
     </div>
-  </div>
+  </form>
+  <dialog id="modal" class="col-6 rounded text-primary bg-primary border-primary">
+    <div class="mb-3 d-flex justify-content-end">
+      <button id="cerrar" title="cerrar" class="btn btn-secondary btn-sm">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <p class="fs-5 font-primary text-primary text-center">
+      Reserva realizada correctamente
+    </p>
+  </dialog>
 
 
   <!-- Footer -->
@@ -155,5 +172,6 @@
 
   <script src="js/bootstrap.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/funciones.js"></script>
   <script src="js/reservas.js"></script>
 </body>

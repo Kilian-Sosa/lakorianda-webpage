@@ -1,14 +1,12 @@
-const inputName = document.getElementById("inputName"); 
-const inputCompany = document.getElementById("inputCompany");
-const inputTlf = document.getElementById("inputTlf");
-const inputEmail = document.getElementById("inputEmail");
-const datePicker = document.getElementById("datePicker");
-const hourPicker = document.getElementById("hourPicker");
-const inputSubject = document.getElementById("inputSubject");
-const inputMessage = document.getElementById("inputMessage");
+let inputName = document.getElementById("inputName"); 
+let inputCompany = document.getElementById("inputCompany");
+let inputTlf = document.getElementById("inputTlf");
+let inputEmail = document.getElementById("inputEmail");
+let datePicker = document.getElementById("datePicker");
+let hourPicker = document.getElementById("hourPicker");
+let inputSubject = document.getElementById("inputSubject");
+let inputMessage = document.getElementById("inputMessage");
 let errorMessage = document.getElementById("errorMessage");
-
-// Reservas
 
 function onloadReservas(){
     datePicker.setAttribute("min", new Date().toISOString().split("T")[0]);

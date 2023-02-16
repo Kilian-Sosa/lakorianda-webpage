@@ -81,7 +81,7 @@
         <div class="col-12 col-sm-6 col-lg-4">
           <p>En Horario de Servicio</p>
           <div class="row">
-           <a class="formularios" href=""><p class="col-12"><i class="fab fa-whatsapp fs-4"></i> +34 689545230</p></a> 
+           <a class="formularios" href="https://wa.me/+34689545230" target="_blank"><p class="col-12"><i class="fab fa-whatsapp fs-4"></i> +34 689545230</p></a> 
           </div>
         </div>
       </div>
@@ -92,23 +92,23 @@
     <div class="row justify-content-center text-center">
       <div class="col-12 col-md-10" >
         <div class="col-12 d-md-flex justify-content-center">
-          <input type="text" class="form-control" required placeholder="Nombre *">
-          <input type="email" class="form-control " placeholder="Email">
+          <input type="text" class="form-control" id="inputName" required placeholder="Nombre *">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
         </div>
         <div class="col-12 d-md-flex justify-content-center">
-          <input type="text" class="form-control" required placeholder="Teléfono *">
-          <input type="number" class="form-control" required min="1" max="10" placeholder="Nº de Comensales">
+          <input type="text" class="form-control" id="inputTlf" required placeholder="Teléfono *">
+          <input type="number" class="form-control" id="inputCustomers" required min="1" max="10" placeholder="Nº de Comensales">
         </div>
         <div class="col-12 d-md-flex justify-content-center">
           <input type="date" class="form-control" required id="datePicker" placeholder="Fecha *">
           <input type="time" class="form-control" required id="hourPicker" min="09:00:00" max="17:00:00" placeholder="Hora *">
         </div>
         <div class="form-group">
-          <textarea class="form-control" rows="3" placeholder="A tener en cuenta..."></textarea>
+          <textarea class="form-control" rows="3" id="inputMessage" placeholder="A tener en cuenta..."></textarea>
         </div>
       </div>
       <div  class="col-12 text-center mt-5">
-        <button type="submit" class="btn btn-primary btn-block text-wrap mb-5 btn-min-width">Reservar</button>
+        <button class="btn btn-primary btn-block text-wrap mb-5 btn-min-width" onclick="sendMessage()">Reservar</button>
       </div>
     </div>
   </div>
@@ -152,7 +152,5 @@
 
   <script src="js/bootstrap.js"></script>
   <script src="js/menu.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/formsControl.js"></script>
 </body>

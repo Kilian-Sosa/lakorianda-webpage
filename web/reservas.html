@@ -8,10 +8,10 @@
   <title>Reservas - La Korianda</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/reservas.css" />
-  <link rel="icon" type="image/png" href="images/lakorianda.png" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 
-<body class="bg-primary">
+<body class="bg-primary" onload="onloadReservas()">
   <!-- Principal Menu -->
   <nav class="navbar navbar-expand menu_mobile">
     <div class="container-fluid">
@@ -94,16 +94,16 @@
     <div class="row text-center">
       <div class="col-12">
         <div class="col-12 d-md-flex justify-content-center justify-content-md-between">
-          <input type="text" class="form-control mb-3 mb-md-0 mr-md-3" placeholder="Nombre">
-          <input type="email" class="form-control mb-3 mb-md-0 ml-md-3" placeholder="Email">
+          <input type="text" class="form-control mb-3 mb-md-0 mr-md-3" required placeholder="Nombre *">
+          <input type="email" class="form-control mb-3 mb-md-0 ml-md-3" required placeholder="Email">
         </div>
         <div class="col-12 d-md-flex justify-content-center justify-content-md-between">
-          <input type="text" class="form-control mb-3 mb-md-0 mr-md-3" placeholder="Teléfono">
-          <input type="number" class="form-control mb-3 mb-md-0 ml-md-3" min="1" max="10" placeholder="Nº de Comensales">
+          <input type="text" class="form-control mb-3 mb-md-0 mr-md-3" required placeholder="Teléfono *">
+          <input type="number" class="form-control mb-3 mb-md-0 ml-md-3" required min="1" max="10" placeholder="Nº de Comensales *">
         </div>
         <div class="col-12 d-md-flex justify-content-center justify-content-md-between">
-          <input type="date" class="form-control mb-3 mb-md-0 mr-md-3" id="datePicker" placeholder="Fecha">
-          <input type="time" class="form-control mb-3 mb-md-0 ml-md-3" placeholder="Hora">
+          <input type="date" class="form-control mb-3 mb-md-0 mr-md-3" required id="datePicker" placeholder="Fecha *">
+          <input type="time" class="form-control mb-3 mb-md-0 ml-md-3" required id="hourPicker" min="09:00:00" max="17:00:00" placeholder="Hora *">
         </div>
         <div class="form-group">
           <textarea class="form-control" rows="3" placeholder="A tener en cuenta..."></textarea>
@@ -154,5 +154,7 @@
 
   <script src="js/bootstrap.js"></script>
   <script src="js/menu.js"></script>
-  <script src="js/reservas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/formsControl.js"></script>
 </body>
